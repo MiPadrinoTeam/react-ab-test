@@ -98,8 +98,8 @@ class Debugger extends Component {
   }
 
   componentDidMount() {
-    this.activeSubscription = emitter.addListener("active", this.updateExperiments);
-    this.inactiveSubscription = emitter.addListener("inactive", this.updateExperiments);
+    this.activeSubscription = emitter.addListener("active-variant", this.updateExperiments);
+    this.inactiveSubscription = emitter.addListener("inactive-variant", this.updateExperiments);
   }
 
   componentWillUnmount() {
